@@ -1,5 +1,6 @@
 package podo.sopt.org.podo;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
@@ -27,6 +28,11 @@ public class MainActivity extends AppCompatActivity {
     @OnClick(R.id.button)
     public void onClickTest(){
         Toast.makeText(getApplicationContext(),"tttest",Toast.LENGTH_SHORT).show();
+
+        Intent intent = new Intent(getApplicationContext(),CameraActivity.class);
+
+        startActivity(intent);
+
     }
 
 }
