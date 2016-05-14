@@ -13,7 +13,11 @@ import butterknife.OnClick;
 public class MainActivity extends AppCompatActivity {
 
 
-    @Bind(R.id.button) Button button;
+
+
+
+
+
 
 
     @Override
@@ -21,18 +25,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ButterKnife.bind(this);
+//        ButterKnife.bind(this);
     }
 
 
-    @OnClick(R.id.button)
-    public void onClickTest(){
-        Toast.makeText(getApplicationContext(),"tttest",Toast.LENGTH_SHORT).show();
-
-        Intent intent = new Intent(getApplicationContext(),CameraActivity.class);
-
-        startActivity(intent);
-
-    }
+//    @OnClick(R.id.button)
+//    public void onClickTest(){
+//        Toast.makeText(getApplicationContext(),"tttest",Toast.LENGTH_SHORT).show();
+//
+//        Intent intent = new Intent(getApplicationContext(),CameraActivity.class);
+//
+//        startActivity(intent);
+//
+//    }
 
 }
